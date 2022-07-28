@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to our website</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <div class="back"></div>
+        <section id="form">
+            <section id="login">
+                <h2>Check members details</h2>
+                <div class="inputs">
+                    <label for="username"><span class="bi-person"></span> Username</label>
+                    <input placeholder="Username" type="text" id="username" name="username" required autocomplete="off">
+                    <label for="password"><span class="bi-lock"></span> Password</label>
+                    <input placeholder="Password" type="password" id="password" name="password" required autocomplete="off">
+                    <div>
+                        <button id="send">Check Result</button>
+                    </div>
+                </div>
+            </section>
+            <section id="result">
+                <div>
+                    <div>
+                        <figure id="userImg">
+                            <img  src="" alt="">
+                        </figure>
+                    </div>
+                    <section>
+                        <h2 id="name"><span class="bi-person"></span> <b>User's name :</b></h2>
+                        <h2 id="gend"><span class="bi-person-heart"></span> <b>User's Gender :</b></h2>
+                        <h2 id="email"><span class="bi-envelope"></span> <b>User's Email :</b></h2>
+                        <h2 id="phone"><span class="bi-phone"></span> <b>User's Phone :</b></h2>
+                        <h2 id="country"><span class="bi-stack"></span> <b>User's Country :</b></h2>
+                        <h2 id="address"><span class="bi-map"></span> <b>User's Address :</b></h2>
+                    </section>
+                    <div>
+                        <button id="again">Search Again</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div id="loading"><h2>loading <span>.</span><span>.</span><span>.</span></h2></div>
+        <div id="suggest">
+            <h2>Suggusts</h2>
+            <ul>
+                <li><span class="bi-person"></span> First Person</li>
+                <li>User: purplewolf840</li>
+                <li>Pass: newness</li>
+            </ul>
+            <ul>
+                <li><span class="bi-person"></span> Second Person</li>
+                <li>User: lazyfrog377</li>
+                <li>Pass: texas1</li>
+            </ul>
+            <ul>
+                <li><span class="bi-person"></span> Third Person</li>
+                <li>User: bigostrich512</li>
+                <li>Pass: nemesis</li>
+            </ul>
+        </div>
+        <div id="error">
+            <h2><span class="bi-sign-stop"></span> Error</h2>
+            <h3>Invalid password or username</h3>
+        </div>
+        <div id="success">
+            <h2><span class="bi-check-circle"></span> Success</h2>
+        </div>
+    </main>
+</body>
+<script src="src/script/script.js"></script>
+</html>
+
+<!-- data -->
+<!-- https://randomuser.me/api/?results=100 -->
